@@ -320,14 +320,15 @@ img {
 }
 
 .work-img-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: 27px;
   width: 100%;
   height: 70px;
   font-weight: 700;
-  text-align: center;
   text-transform: uppercase;
   color: var(--primary-white-color);
   background: rgba(47, 48, 58, 0.8);
@@ -460,6 +461,10 @@ img {
 .footer-container {
   display: flex;
   align-items: baseline;
+}
+
+.footer-address {
+  flex-grow: 1;
 }
 
 .adress-info {
@@ -658,6 +663,7 @@ img {
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .is-hidden {
@@ -672,7 +678,8 @@ img {
 }
 
 .modal-title {
-  margin-bottom: 12px;
+  margin-top: 40px;
+  margin-bottom: 28px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -684,17 +691,80 @@ img {
   width: 448px;
 }
 
+.input-wrap {
+  position: relative;
+  margin-bottom: 30px;
+}
+
 .modal-input-wrap {
   position: relative;
   display: block;
 }
 
+.modal-icon {
+  position: absolute;
+  left: 12px;
+  top: 15%;
+  transform: translateY(-50%);
+}
+
+.modal-label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+
 .modal-input {
-  margin-bottom: 10px;
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+}
+
+.coments {
+  width: 100%;
+  height: 120px;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+}
+
+.checkbox-text {
+  display: flex;
+  justify-content: center;
+  letter-spacing: 1.71;
+}
+
+.checkbox-link {
+  color: var(--accent-color);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.checkbox-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox-label::before {
+  content: '';
+  width: 15px;
+  height: 16px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  display: block;
+}
+
+.checkbox-input:checked + .checkbox-label::before {
+  background-color: var(--primary-black-color);
+}
+
+.modal-btn {
+  margin-top: 30px;
 }
 
 /* Sub */

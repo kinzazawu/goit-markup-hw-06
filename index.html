@@ -448,13 +448,39 @@
             <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
             <form class="modal-form">
                 <div class="form-field">
-                    <label for="user-name" class="modal-label">Имя</label>
-                    <input type="text" name="user-name" id="user-name" class="modal-input" required>
-                    <label for="user-tel" class="modal-label">Телефон</label>
-                    <input type="text" name="user-tel" id="user-tel" class="modal-input" required>
-                    <label for="user-mail" class="modal-label">Почта</label>
-                    <input type="text" name="user-mail" id="user-mail" class="modal-input" required>
-                    <buttont type="submit" class="button">Отправить</buttont>
+                    <label class="modal-label">Имя 
+                        <span class="input-wrap">
+                            <input type="text" name="user-name" id="user-name" class="modal-input" required> 
+                            <svg width="18px" height="18px" class="modal-icon">
+                                <use href="./images/icons.svg#icon-person-black"></use>
+                            </svg>
+                        </span>
+                    </label>
+                    <label for="user-tel" class="modal-label">Телефон
+                        <span class="input-wrap">
+                            <input type="text" name="user-tel" id="user-tel" class="modal-input" required>
+                            <svg width="18px" height="18px" class="modal-icon">
+                                <use href="./images/icons.svg#icon-phone-black"></use>
+                            </svg>
+                        </span>
+                    </label>
+                    <label for="user-mail" class="modal-label">Почта
+                        <span class="input-wrap">
+                            <input type="text" name="user-mail" id="user-mail" class="modal-input" required>
+                            <svg width="18px" height="18px" class="modal-icon">
+                                <use href="./images/icons.svg#icon-email-black"></use>
+                            </svg>
+                        </span>
+                    </label>
+                    <label class="modal-label">Комментарий
+                        <textarea name="coments" class="coments" placeholder="Введите текст"></textarea>
+                    </label>
+                    <label class="checkbox-label" for="checkbox-input">
+                        <span class="checkbox-text">
+                            <input type="checkbox" class="checkbox-input" name="checkbox-input" id="checkbox-input">Соглашаюсь с рассылкой и принимаю &#160; <a href="" class="checkbox-link">Условия договора</a>
+                        </span>
+                    </label>
+                    <buttont type="submit" class="button modal-btn">Отправить</buttont>
                 </div>
                 
             </form>
