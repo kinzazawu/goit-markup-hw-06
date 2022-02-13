@@ -156,7 +156,9 @@ img {
   font-weight: 500;
   letter-spacing: 0.02em;
 }
-
+.contacts-link-header {
+  padding: 32px 0;
+}
 .contacts-item + .contacts-item {
   margin-left: 50px;
 }
