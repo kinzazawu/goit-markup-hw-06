@@ -777,6 +777,12 @@ img {
   fill: var(--accent-color);
 }
 
+.form-ckek-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
 .modal-check-text {
   display: flex;
   align-items: center;
@@ -799,6 +805,11 @@ img {
 
 .modal-check:checked + .modal-check-text > .check-wrap {
   background-color: var(--accent-color);
+  border: none;
+}
+
+.modal-check:focus + .modal-check-text > .check-wrap {
+  outline: 2px solid var(--accent-color);
   border: none;
 }
 
